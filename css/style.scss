@@ -1,0 +1,43 @@
+@mixin btnSet($btn-bg) {
+    width: 100px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 0;
+    margin: 10px;
+    background: $btn-bg;
+}
+.btn-basic{
+    @include btnSet(blue);
+}
+.btn-red{
+    @include btnSet(red);
+}
+.btn-yellow{
+    @include btnSet(yellow);
+}
+.btn-green{
+    @include btnSet(green);
+}
+%btnSet2{
+    width: 100px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 0;
+    margin: 10px;
+}
+.btn-basic2{
+    @extend %btnSet2;
+    background: blue;
+}
+.btn-red2{
+    @extend %btnSet2;
+    background: red;
+}
+.btn-yellow2{
+    @extend %btnSet2;
+    background: yellow;
+}
+.btn-green2{
+    @extend %btnSet2;
+    background: green;
+}

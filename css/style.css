@@ -1,0 +1,59 @@
+.btn-basic {
+  width: 100px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px 0;
+  margin: 10px;
+  background: blue;
+}
+
+.btn-red {
+  width: 100px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px 0;
+  margin: 10px;
+  background: red;
+}
+
+.btn-yellow {
+  width: 100px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px 0;
+  margin: 10px;
+  background: yellow;
+}
+
+.btn-green {
+  width: 100px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px 0;
+  margin: 10px;
+  background: green;
+}
+
+.btn-green2, .btn-yellow2, .btn-red2, .btn-basic2 {
+  width: 100px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px 0;
+  margin: 10px;
+}
+
+.btn-basic2 {
+  background: blue;
+}
+
+.btn-red2 {
+  background: red;
+}
+
+.btn-yellow2 {
+  background: yellow;
+}
+
+.btn-green2 {
+  background: green;
+}
