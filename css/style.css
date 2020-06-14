@@ -1,11 +1,11 @@
 @charset "UTF-8";
 body {
-  font: 100% Helvetica, sans-serif;
+  font: 100% Roboto Condensed, sans-serif;
   color: #c9191d;
 }
 
 .one {
-  color: #bc30c9;
+  color: #9764da;
   background-color: #c9191d;
   height: 20％;
   width: 20％;
