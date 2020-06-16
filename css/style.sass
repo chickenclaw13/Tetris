@@ -7,7 +7,39 @@ body
 
 
 .one
-    color: $secondary-color
-    background-color: $primary-color
-    height: 20％
-    width: 20％ 
+  color: $secondary-color
+  background-color: $primary-color
+  height: 20％
+  width: 20％
+
+
+.container
+  width: 80%
+  max-width: 1200px
+  margin-left: auto
+  margin-right: auto
+
+
+.site-main
+  background-color: #cccccc
+  
+
+.content
+  height: 600px
+  width: 68%
+  background-color: $tertiary-color
+  float: left
+
+
+.sidebar
+  height: 600px
+  width: 32%
+  float: right
+  background-color: $primary-color
+
+.site-main-inner
+  &::after
+    content:''
+    display: block
+    clear: both
+
