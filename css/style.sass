@@ -3,14 +3,9 @@
 
 body
   font: 100% $font-stack
-  color: $primary-color
+  color: #000000
+  font-size: 32px
 
-
-.one
-  color: $secondary-color
-  background-color: $primary-color
-  height: 20％
-  width: 20％
 
 
 .container
@@ -24,18 +19,27 @@ body
   background-color: #cccccc
   
 
-.content
-  height: 600px
-  width: 68%
-  background-color: $tertiary-color
-  float: left
-
-
 .sidebar
-  height: 600px
+  height: 500px
   width: 32%
-  float: right
+  float: left
   background-color: $primary-color
+
+.sidebar + .content
+  width: 36%
+  height: 600px
+  float: left
+  background-color: $tertiary-color
+
+// .content:last-child
+//   width: 68%
+
+.sidebar ~ .sidebar
+  width: 32%
+  height: 400px
+  float: right
+  background-color: $secondary-color 
+
 
 .site-main-inner
   &::after
