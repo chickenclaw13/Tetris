@@ -52,6 +52,12 @@ body {
   background-color: #39eb7d;
 }
 
+.site-main-inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 @media (min-width: 1200px) {
   .container {
     width: 1000px;
@@ -92,9 +98,4 @@ body {
   .content:only-child {
     width: 100%;
   }
-}
-.site-main-inner::after {
-  content: "";
-  display: block;
-  clear: both;
 }
