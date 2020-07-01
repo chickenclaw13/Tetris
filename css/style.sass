@@ -1,109 +1,138 @@
 @import libs/base
 
-  
 
-body
-  font: 100% $font-stack
-  color: #000000
-  font-size: 32px
+* , ::after , ::before
+  -webkit-box-sizing: inherit
+  box-sizing: inherit
 
 
-.site-header
-  background-color: $primary-color
+html
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+
+div
+  padding: 1rem
+  backgtound-color: $tertiary-color
+  border: 3px solid #000000
+  width: 50%
   position: relative
-  z-index: 99
-  width: 100%
-
-
-.header-container
-  width:80%
-  max-width: 1200px
-  margin-left: auto
-  margin-right: auto
-  position: relative
-
-
-.site-logo
-  position: fixed
-  background-color: $quinary-color
-  color: $white
-  top: 0px
-  left: 0px
-  width: 100%
-  height: 70px
-
-
-.site-main
-  background-color: #cccccc
-
-
-.container
-  margin-top: 70px
-  max-width: 1200px
-  margin-left: auto
-  margin-right: auto
-
-
-.content , .sidebar
-  height: 300px
+  float: left
 
 .content
-  background-color: $primary-color
-  
+  backgtound-color: $quinary-color
+  left:50%
+
 .sidebar
-  background-color: $tertiary-color
-
-
-.site-main-inner
-  &::after
-    content:''
-    display: block
-    clear: both
+  background-color: $secondary-color
+  right:50%
 
 
 
-
-@media (min-width: 1200px)
-  .container
-    width: 1000px
-
-
-@media (min-width: 992px)
-  .container
-    width: 920px
+// body
+//   font: 100% $font-stack
+//   color: #000000
+//   font-size: 32px
 
 
-@media (min-width: 768px)
+// .site-header
+//   background-color: $primary-color
+//   position: relative
+//   z-index: 99
+//   width: 100%
+
+
+// .header-container
+//   width:80%
+//   max-width: 1200px
+//   margin-left: auto
+//   margin-right: auto
+//   position: relative
+
+
+// .site-logo
+//   position: fixed
+//   background-color: $quinary-color
+//   color: $white
+//   top: 0px
+//   left: 0px
+//   width: 100%
+//   height: 70px
+
+
+// .site-main
+//   background-color: #cccccc
+
+
+// .container
+//   margin-top: 70px
+//   max-width: 1200px
+//   margin-left: auto
+//   margin-right: auto
+
+
+// .content , .sidebar
+//   height: 300px
+
+// .content
+//   background-color: $primary-color
   
-  .content , .sidebar
-    height: 1000px
-  
-  .content
-    width: 68%
-    float: left
+// .sidebar
+//   background-color: $tertiary-color
 
-  .sidebar
-    width: 32%
-    float: left
+
+// .site-main-inner
+//   &::after
+//     content:''
+//     display: block
+//     clear: both
+
+
+
+
+// @media (min-width: 1200px)
+//   .container
+//     width: 1000px
+
+
+// @media (min-width: 992px)
+//   .container
+//     width: 920px
+
+
+// @media (min-width: 768px)
+  
+//   .content , .sidebar
+//     height: 1000px
+  
+//   .content
+//     width: 68%
+//     float: left
+
+//   .sidebar
+//     width: 32%
+//     float: left
     
   
-  .sidebar ~ .sidebar
-    float: right
+//   .sidebar ~ .sidebar
+//     float: right
 
 
-  .sidebar + .content
-    width: 36%
+//   .sidebar + .content
+//     width: 36%
 
 
-  .content:last-child
-    width: 68%
+//   .content:last-child
+//     width: 68%
 
 
-  .content:only-child
-    width:100%
+//   .content:only-child
+//     width:100%
 
 
 
+
+// position練習
 
 
 // .center
