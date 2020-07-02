@@ -1,7 +1,11 @@
 @import libs/base
 
+body
+  height: 100%
+  width: 100%
 
-* , ::after , ::before
+
+*, ::after , ::before
   -webkit-box-sizing: inherit
   box-sizing: inherit
 
@@ -9,23 +13,68 @@
 html
   -webkit-box-sizing: border-box
   box-sizing: border-box
+  overflow:hidden
 
 
 div
   padding: 1rem
-  backgtound-color: $tertiary-color
-  border: 3px solid #000000
+  background-color: $secondary-color
+  border: 5px solid #000000
   width: 50%
   position: relative
-  float: left
+  float: right
+  height: 100px
+  
 
 .content
-  backgtound-color: $quinary-color
-  left:50%
+  background-color: $quinary-color
+  // position: absolute
+  // right: 50%
 
 .sidebar
   background-color: $secondary-color
-  right:50%
+  // position: absolute
+  // left: 50%
+  // width: 50%
+
+
+@media (min-width: 1200px)
+  .container
+    width: 1000px
+
+
+@media (min-width: 992px)
+  .container
+    width: 920px
+
+
+@media (max-width: 768px)
+  
+  div
+    height: 200px
+    // width: 100%
+    padding: 1rem
+    background-color: $secondary-color
+    border: 5px solid #000000
+    width: 100%
+    // position: relative
+    // float: right
+
+  .content
+    background-color: $quinary-color
+    // position: absolute
+    // right: 50%
+    // float: right
+
+  .sidebar
+    background-color: $secondary-color
+    // position: absolute
+    // left: 50%
+    // float: left
+
+
+
+  
 
 
 
@@ -155,3 +204,9 @@ div
 
 // .three
 //   background-color: $tertiary-color
+
+
+
+
+
+
