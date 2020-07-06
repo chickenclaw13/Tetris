@@ -1,5 +1,10 @@
 @import libs/base
 
+
+
+
+
+
 body
   height: 100%
   width: 100%
@@ -16,26 +21,30 @@ html
   overflow:hidden
 
 
-div
+.wapper
+  width: 100%
+  display: flex
+  
+
+
+.content , .sidebar , .sidebar-2
   padding: 1rem
   background-color: $secondary-color
   border: 5px solid #000000
-  width: 50%
+  flex:1
   position: relative
-  float: right
   height: 100px
   
-
+  
 .content
   background-color: $quinary-color
-  // position: absolute
-  // right: 50%
 
 .sidebar
   background-color: $secondary-color
-  // position: absolute
-  // left: 50%
-  // width: 50%
+ 
+
+.sidebar-2
+  background-color: $tertiary-color
 
 
 @media (min-width: 1200px)
@@ -50,32 +59,113 @@ div
 
 @media (max-width: 768px)
   
-  div
+  .wapper
+    flex-direction: column
+
+  .content , .sidebar , .sidebar-2
     height: 200px
-    // width: 100%
     padding: 1rem
-    background-color: $secondary-color
     border: 5px solid #000000
     width: 100%
-    // position: relative
-    // float: right
 
   .content
-    background-color: $quinary-color
-    // position: absolute
-    // right: 50%
-    // float: right
+    order: 3
 
   .sidebar
-    background-color: $secondary-color
-    // position: absolute
-    // left: 50%
-    // float: left
+    order: 2
+  
+  .sidebar2
+    order: 1
+
+
+
+// 手機上下反過來排
+
+// @media (max-width: 768px)
+//   .wapper
+//     flex-direction: column-reverse
+
+
+
+
+
+
+
+// 舊版本寫法
+
+// body
+//   height: 100%
+//   width: 100%
+
+
+// *, ::after , ::before
+//   -webkit-box-sizing: inherit
+//   box-sizing: inherit
+
+
+// html
+//   -webkit-box-sizing: border-box
+//   box-sizing: border-box
+//   overflow:hidden
+
+
+// div
+//   padding: 1rem
+//   background-color: $secondary-color
+//   border: 5px solid #000000
+//   width: 50%
+//   position: relative
+//   float: right
+//   height: 100px
+  
+
+// .content
+//   background-color: $quinary-color
+//   // position: absolute
+//   // right: 50%
+
+// .sidebar
+//   background-color: $secondary-color
+//   // position: absolute
+//   // left: 50%
+//   // width: 50%
+
+
+// @media (min-width: 1200px)
+//   .container
+//     width: 1000px
+
+
+// @media (min-width: 992px)
+//   .container
+//     width: 920px
+
+
+// @media (max-width: 768px)
+  
+//   div
+//     height: 200px
+//     padding: 1rem
+//     background-color: $secondary-color
+//     border: 5px solid #000000
+//     width: 100%
+
+//   .content
+//     background-color: $quinary-color
+
+//   .sidebar
+//     background-color: $secondary-color
 
 
 
   
 
+
+
+
+
+
+// 第五章練習
 
 
 // body
@@ -177,6 +267,8 @@ div
 
 //   .content:only-child
 //     width:100%
+
+
 
 
 
